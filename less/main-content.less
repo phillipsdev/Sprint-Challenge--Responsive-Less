@@ -19,6 +19,10 @@ header {
 		flex-direction: column-reverse;
 	}
 
+	@media @tablet {
+		
+	}
+
 	nav {
 		width: 80%;
 		height: 100%;
@@ -26,15 +30,17 @@ header {
 		margin-right: 2%;
 		.center-content;
 
-		@media @laptop {
-			background: @goblin;
-		}
-
 		@media @phone {
 			background: @tango;
 			height: 50%;
 			width: 100%;
 		}
+
+		@media @laptop {
+			background: @goblin;
+		}
+
+		
 	}
 
 	.logo {
@@ -44,12 +50,12 @@ header {
 		.center-content;
 		.border-radius(50%);
 
-		@media @tablet {
-			background: @seance;
-		}
-
 		@media @phone {
 			align-self: center;
+		}
+
+		@media @tablet {
+			background: @seance;
 		}
 	}
 }//header
@@ -65,12 +71,12 @@ header {
 	flex-flow: wrap;
 	justify-content: space-evenly;
 
-	@media @tablet {
-		height: 100%
-	}
-
 	@media @phone {
 		height: 100%;
+	}
+
+	@media @tablet {
+		height: 100%
 	}
 
 	.boxes {
@@ -84,54 +90,54 @@ header {
 	}
 
 	.box1 {
-		@media @laptop {
-			background: @goblin;
-		}
-
-		@media @tablet {
-			width: 100%;
-		}
-
 		@media @phone {
 			background: @tango;
 			width: 100%;
 		}
+
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @laptop {
+			background: @goblin;
+		}	
 	}
 
 	.box2 {
+		@media @phone {
+			width: 100%;
+		}
+
 		@media @tablet {
 		background: @seance;
 		width: 100%;
 		}
-
-		@media @phone {
-			width: 100%;
-		}
 	}
 
 	.box3 {
-		@media @tablet {
-			background: @seance;
+		@media @phone {
 			width: 100%;
 		}
 
-		@media @phone {
+		@media @tablet {
+			background: @seance;
 			width: 100%;
 		}
 	}
 
 	.box4 {
-		@media @laptop {
-			background: @goblin;
+		@media @phone {
+			background: @tango;
+			width: 100%;
 		}
 
 		@media @tablet {
 			width: 100%;
 		}
 
-		@media @phone {
-			background: @tango;
-			width: 100%;
+		@media @laptop {
+			background: @goblin;
 		}
 	}
 } //content
